@@ -1,0 +1,24 @@
+<div class="box">
+  <div class="left-box">
+    <h2>No, the secret number is <strong>{{ problem.hint == 1 ?
+    'smaller' : 'larger' }}</strong> than {{ this.userAnswerOld }}.</h2>
+
+    <p><span class="problem_text">Number of guesses: {{ problem.guessCount }}</span></p>
+    <p>Try again. Enter your guess: </p>
+    <p><input id="answer" type="text" #userAnswer></p>
+
+    <p>
+      <button (click)='check(userAnswer.value)'>Submit</button>
+    </p>
+    <p>
+      <a routerLink="/see-answer">See Answer</a> | <a routerLink="/new-number">New Number</a>
+    </p>
+  </div>
+  <div class="right-box">
+    <div class="right-box">
+      <fa-icon class="gradient-text" [icon]="faNotEqual"></fa-icon>
+      <fa-icon class="main" [icon]="faNotEqual"></fa-icon>
+      <fa-icon [icon]="faNotEqual"></fa-icon>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,18 @@
+.container {
+  background-color: white;
+  max-width: 70%;
+  margin: auto;
+  color: black;
+}
+
+header {
+  max-width: 70%;
+  margin: auto;
+}
+header h1 {
+  font: 40px 'Courier New', monospace;
+  font-weight: 700;
+  color: #FCBF49;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}

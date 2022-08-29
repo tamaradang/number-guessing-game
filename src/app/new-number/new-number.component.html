@@ -1,0 +1,21 @@
+<div class="box">
+  <div class="left-box">
+    <h2>Guess a number between <strong>1</strong> and <strong>10</strong></h2>
+    <p>Enter your guess: </p>
+    <p><input id="answer" type="text" #userAnswer></p>
+    <p>
+      <button (click)='check(userAnswer.value)'>Submit</button>
+    </p>
+    <p>
+      <a routerLink="/see-answer">See Answer</a> | <a routerLink="/new-number">New Number</a>
+    </p>
+  </div>
+
+
+  <div class="right-box">
+    <fa-icon class="gradient-text" [icon]="faQuestion"></fa-icon>
+    <fa-icon class="main" [icon]="faQuestion"></fa-icon>
+    <fa-icon [icon]="faQuestion"></fa-icon>
+  </div>
+</div>
+

@@ -1,0 +1,20 @@
+.right-box {
+  background-color: #BDB2FF;
+}
+strong {
+  color: #5141ac;
+}
+
+fa-icon {
+  color: #7768cf;
+}
+.main {
+  color: #5141ac;
+}
+
+button {
+  background-color: #5141ac;
+}
+button:hover {
+  background-color: #7768cf;
+}

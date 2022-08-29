@@ -1,0 +1,16 @@
+<div class="box">
+  <div class="left-box">
+    <h2>You guessed {{ userAnswer }}. Your answer is <strong>right</strong>!</h2>
+
+    <p>Number of guesses: {{ problem.guessCount }}</p>
+    <p>
+      <a routerLink="/new-problem">New Problem</a>
+    </p>
+  </div>
+
+  <div class="right-box">
+    <fa-icon class="gradient-text" [icon]="faMedal"></fa-icon>
+    <fa-icon class="main" [icon]="faMedal"></fa-icon>
+    <fa-icon [icon]="faMedal"></fa-icon>
+  </div>
+</div>
